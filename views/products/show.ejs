@@ -12,7 +12,12 @@
       <li>Brand : <%= product.brand %></li>
       <li>Harga : <%= product.price %></li>
       <li>Warna : <%= product.color %></li>
-      <li>Kategori : <%= product.category %></li>
+      <li>
+        Kategori :
+        <a href="/products?category=<%= product.category %>"
+          ><%= product.category %></a
+        >
+      </li>
     </ul>
 
     <a href="/products">All Products</a> <br />
