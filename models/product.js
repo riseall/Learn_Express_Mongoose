@@ -13,7 +13,7 @@ mongoose
 const productSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true,
+    required: [true, "Nama produk harus diisi"],
   },
   brand: {
     type: String,
